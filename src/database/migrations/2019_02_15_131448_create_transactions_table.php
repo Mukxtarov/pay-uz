@@ -24,7 +24,7 @@ class CreateTransactionsTable extends Migration
             $table->string('comment')->nullable();
             $table->string('detail')->nullable();
             $table->string('transactionable_type')->nullable();
-            $table->integer('transactionable_id')->nullable();
+            $table->string('transactionable_id')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
